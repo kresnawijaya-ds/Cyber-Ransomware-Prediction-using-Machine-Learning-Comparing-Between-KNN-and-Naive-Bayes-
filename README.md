@@ -63,3 +63,17 @@ The dataset is highly imbalanced:
 ## ✔ Feature Scaling
 
 Scaling applied only for KNN using StandardScaler.
+
+# Modeling 
+Two machine learning algorithms were applied:
+
+## 1) Gaussian Naive Bayes (Scaled & Unscaled)
+
+* does not affect GaussianNB results.
+* Assumes independence between features (not fully satisfied here).
+
+## 2) K-Nearest Neighbors (Scaled + SMOTE)
+* Uses StandardScaler (distance-based model)
+* Best configuration:
+    - n_neighbors = 7
+    - weights = 'distance'
